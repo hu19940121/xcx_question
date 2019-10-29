@@ -1,0 +1,8 @@
+<!--components/bankCard/bankCard.wxml-->
+<view class="bank-card" bindtap="linkToBankDetail" data-id="{{ bankInfo._id }}">
+  <view class="poster-wrapper">
+    <image class="poster" src="{{ bankInfo.banner }}" />
+    <view class="canyu">{{ bankInfo.join_num }} 参与</view>
+  </view>
+  <view class="title">{{ bankInfo.name }}</view>
+</view>

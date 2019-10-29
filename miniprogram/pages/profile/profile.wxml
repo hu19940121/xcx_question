@@ -1,0 +1,50 @@
+<!--miniprogram/pages/profile/profile.wxml-->
+  <!-- <navigator url="/pages/authPage/authPage" hover-class="navigator-hover" open-type="navigate"  wx:if="{{!userInfo}}">
+    <button type="primary">
+      点击登录
+    </button>
+  </navigator>
+-->
+
+<scroll-view scroll-y class="scrollPage">
+  <view class="UCenter-bg padding">
+    <view class="user-info padding">
+      <view class="top  flex align-center">
+        <image class="avatar" src="{{ userInfo.avatarUrl }}" />
+        <view class="l padding-left-sm">
+          <text wx:if="{{userInfo}}" class="nickname">{{ userInfo.nickName }}</text>
+          <navigator wx:else url="/pages/authPage/authPage" hover-class="navigator-hover" open-type="navigate">
+            <button
+              bindtap="restart" 
+              class="cu-btn bg-blue shadow-blur round"  
+            >
+              授权登陆
+            </button>
+          </navigator>
+        </view>
+      </view>
+      <view class="bottom flex justify-around margin-top">
+        <view class="b-item flex flex-direction align-center">
+          <view class="item-num padding-bottom-sm"> 0 </view>
+          <view class="item-text text-grey"> 发布答题 </view>
+        </view>
+        <view class="b-item flex flex-direction align-center">
+          <view class="item-num padding-bottom-sm"> 0 </view>
+          <view class="item-text text-grey"> 参与答题 </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <block wx:if="{{userInfo}}">
+    <view class="cu-list menu card-menu margin-bottom-xl shadow-lg radius">
+      <view class="cu-item arrow">
+        <view class="content" bindtap="CopyLink" data-link="https://kaier001.com">
+          <text class="cuIcon-footprint text-grey"></text>
+          <text class="text-grey">答题记录</text>
+        </view>
+      </view>
+    </view>
+  </block>
+
+  <view class="cu-tabbar-height"></view>
+</scroll-view>

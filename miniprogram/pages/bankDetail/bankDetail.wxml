@@ -1,0 +1,63 @@
+<!--miniprogram/pages/bankDetail/bankDetail.wxml-->
+<!-- <view>
+  {{ bankDetail.name }}
+  <button type="primary" bindtap="start" wx:if="{{bankDetail.type === 0}}">
+    开始做题
+  </button>
+  <button type="primary" bindtap="restart" wx:else="{{bankDetail.type === 2}}">
+    重新做题
+  </button>
+</view> -->
+<view class="detail">
+  <view class="top">
+    <view class="banner">
+      <image class="" src="{{ bankDetail.banner }}" />
+    </view>
+    <view class="info padding-sm">
+      <view class="info-title">
+        {{ bankDetail.name }}
+      </view>
+      <view class="time-and-view flex padding-top-sm align-center justify-between">
+        <view class="time">
+          发布于 10月18日 19:39
+        </view>
+        <view class="view">
+          <text class="cuIcon-attention lg text-gray"></text>
+          833
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="mid margin-top padding-sm">
+    {{ bankDetail.introduction }}
+  </view>
+  <navigator  url="{{'/pages/history/history?id=' + bankDetail._id}}">
+    <view class="mid margin-top padding-sm flex justify-between" wx:if="{{bankDetail.status === 2}}">
+      <view>您已经完成答题</view>
+      <view>
+        查看成绩
+        <text class="cuIcon-right lg text-gray"></text>
+      </view>
+    </view>
+  </navigator>
+  <view class="flex justify-center margin-top-xl">
+    <button 
+      class="cu-btn bg-blue shadow-blur round start-btn" 
+      bindtap="start"  
+      wx:if="{{bankDetail.status === 0}}">
+      开始答题
+    </button>
+    <button
+      bindtap="restart" 
+      class="cu-btn bg-blue shadow-blur round start-btn"  
+      wx:elif="{{bankDetail.status === 2}}">
+      重新做题
+    </button>
+    <button
+      bindtap="start"
+      class="cu-btn bg-blue shadow-blur round start-btn"  
+      wx:elif="{{bankDetail.status === 1}}">
+      继续答题
+    </button>
+  </view>
+</view>

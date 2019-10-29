@@ -1,0 +1,20 @@
+/* miniprogram/pages/profile/profile.wxss */
+.UCenter-bg{
+  
+}
+.user-info { background-color: #fff; }
+.user-info .top {
+
+}
+.user-info .top .avatar{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+.nickname{
+  font-size: 30rpx;
+}
+.user-info .bottom .item-num{
+  font-weight: bold;
+  font-size: 40rpx;
+}

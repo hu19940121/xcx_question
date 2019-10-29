@@ -1,0 +1,8 @@
+<!--miniprogram/pages/questionBankDetail/questionBankDetail.wxml-->
+<view class="">
+题库详情
+
+名称{{ bankDetail.name }}
+
+<button type="primary" bindtap="start" data-id="{{ bankDetail._id }}"> 开始做题 </button>
+</view>

@@ -1,0 +1,21 @@
+<!--miniprogram/pages/answerPage/answerpage.wxml-->
+<view class="is-border-box padding-sm">
+  <view class="card">
+    <view class="topic">
+      {{ currentQuestion.question_title }}
+    </view>
+    <view class="chooseOne-answers-list">
+      <radio-group class="radio-group" bindchange="radioChange" style="width:100%;">
+        <view class="cu-form-group margin-top" wx:for="{{ currentQuestion.options }}" wx:for-item="option" wx:key="{{ option.id }}">
+          <view class="title">{{ letter[index] }} 、 {{ option.preanswer }}</view>
+          <radio checked="{{ option.isCheck }}" value="{{ option._id }}"></radio>
+        </view>
+      </radio-group>
+    </view>
+  </view>
+</view>
+<view>
+  <button type="primary" bindtap="prev" disabled="{{ currentQuestionIndex === 0 }}">上一题</button>
+  <button wx:if="{{currentQuestionIndex === questionList.length - 1}}" type="primary" bindtap="handPaper">交卷</button>
+  <button wx:else type="primary" bindtap="submit">下一题</button>
+</view>

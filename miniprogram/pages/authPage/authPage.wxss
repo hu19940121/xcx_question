@@ -1,0 +1,8 @@
+/* miniprogram/pages/authPage/authPage.wxss */
+page{
+  background-color: #fff;
+}
+.auth{ width: 100%; }
+.auth image {
+  width: 220rpx;
+}

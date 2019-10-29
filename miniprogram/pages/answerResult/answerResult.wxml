@@ -1,0 +1,8 @@
+<!--miniprogram/pages/answerResult/answerResult.wxml-->
+<view>
+  <view>您一共回答了{{ result.question_num }}道题</view>
+  <view>答对{{ result.right_num }}道题</view>
+  <view>答错{{ result.wrong_num }}道题</view>
+  <view>总得分: {{result.total_score  }}</view>
+</view>
+

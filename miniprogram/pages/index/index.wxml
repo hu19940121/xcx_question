@@ -1,0 +1,7 @@
+<!--miniprogram/pages/index/index.wxml-->
+<!-- <view wx:if="{{userInfo}}" class="">
+  {{ userInfo.nickName }}
+</view> -->
+<view class="index padding-sm">
+  <bank-card wx:for="{{ bankList }}" wx:key="{{ item._id }}" bankInfo="{{ item }}"></bank-card>
+</view>

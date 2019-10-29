@@ -1,0 +1,30 @@
+<view class="history is-border-box padding-sm">
+  <view class="banner">
+    <image src="{{ info.banner }}" />
+  </view>
+  <view class="title padding-tb-sm text-align-center">
+    {{ info.name }}
+  </view>
+  <view class="flex justify-around">
+    <view >平均分：3.33</view>
+    <view>
+      最高分：10
+    </view>
+  </view>
+  <view class="table">
+    <view class="row flex">
+      <view class="col head flex-twice padding-xs">答题时间</view>
+      <view class="col head flex-sub padding-xs">对/总</view>
+      <view class="col head flex-sub padding-xs">得分</view>
+      <view class="col head flex-twice padding-xs">用时</view>
+      <view class="col head flex-sub padding-xs">操作</view>
+    </view>
+    <view class="row flex" wx:for="{{ info.list }}">
+      <view class="col con flex-twice padding-xs">{{ item.start_time }}</view>
+      <view class="col con flex-sub padding-xs">{{item.right_num}}/{{ item.question_num }}</view>
+      <view class="col con flex-sub padding-xs">{{ item.total_score }}</view>
+      <view class="col con flex-twice padding-xs">{{ item.use_time }}</view>
+      <view class="col con flex-sub padding-xs blue">详情</view>
+    </view>
+  </view>
+</view>

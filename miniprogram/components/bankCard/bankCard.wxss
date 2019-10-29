@@ -1,0 +1,25 @@
+/* components/bankCard/bankCard.wxss */
+.bank-card{
+  width: 710rpx;
+  min-height: 360rpx;
+  background-color: #ffffff;
+  margin: 20rpx 0;
+}
+.poster-wrapper{
+  position: relative;
+}
+.poster-wrapper .poster{
+  width: 100%;
+  height: 320rpx;
+}
+.title{
+  padding: 20rpx;
+}
+.poster-wrapper .canyu{ 
+  position: absolute; 
+  right: 20rpx;
+  bottom: 20rpx;
+  padding: 10rpx;
+  color: #ffffff;
+  background: rgba(0,0,0,0.5);
+}

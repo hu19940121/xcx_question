@@ -1,0 +1,18 @@
+<!--miniprogram/pages/authPage/authPage.wxml-->
+<!-- <button 
+  type="primary" 
+  open-type="getUserInfo"  
+  bindgetuserinfo="onGetUserInfo">
+  授权登录
+</button> -->
+
+<view class="auth flex  align-center padding-top flex-direction">
+  <image mode="aspectFill" src="../../images/auth.jpeg" />
+  <button 
+    class="cu-btn bg-blue shadow-blur  lg"
+    open-type="getUserInfo" 
+    bindgetuserinfo="onGetUserInfo"
+  >
+    授权登陆
+  </button>
+</view>

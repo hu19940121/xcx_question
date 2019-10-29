@@ -1,0 +1,4 @@
+<!--miniprogram/pages/questionBank/questionBank.wxml-->
+<view class="" wx:for="{{list}}" bindtap="linkToBankDetail" data-id="{{ item._id }}">
+  {{ item.name }}
+</view>

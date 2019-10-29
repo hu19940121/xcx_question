@@ -1,0 +1,13 @@
+/* miniprogram/pages/bankDetail/bankDetail.wxss */
+.top .banner{ width: 100%;height: 400rpx; }
+.top .banner image{ width: 100%;height: 100%; }
+.top .info{ background-color: #fff; }
+.time-and-view{ color: gray; }
+.mid{ background-color: #fff; }
+.start-btn{ 
+  width: 260rpx; 
+  height: 260rpx; 
+  border-radius: 50%; 
+  font-size: 38rpx;
+  margin: 0 auto;
+}

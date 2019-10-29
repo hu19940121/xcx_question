@@ -1,0 +1,91 @@
+{
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"enhance": true
+	},
+	"appid": "wxdf7304e74d7a3957",
+	"projectname": "%E5%B0%8F%E7%AD%94%E9%A2%98",
+	"libVersion": "2.8.3",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 6,
+			"list": [
+				{
+					"id": -1,
+					"name": "db guide",
+					"pathName": "pages/databaseGuide/databaseGuide",
+					"query": ""
+				},
+				{
+					"id": 1,
+					"name": "pages/answerPage/answerPage",
+					"pathName": "pages/answerPage/answerPage",
+					"query": "bankId=8011cecc-3495-45c1-b61b-ce341bb44264",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/questionBank/questionBank",
+					"pathName": "pages/questionBank/questionBank",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/questionBankDetail/questionBankDetail",
+					"pathName": "pages/questionBankDetail/questionBankDetail",
+					"query": "id=8b9dd2fa-86a9-4f02-b153-b663cd331fd1",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/bankDetail/bankDetail",
+					"pathName": "pages/bankDetail/bankDetail",
+					"query": "id=8b9dd2fa-86a9-4f02-b153-b663cd331fd1",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/profile/profile",
+					"pathName": "pages/profile/profile",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/history/history",
+					"pathName": "pages/history/history",
+					"query": "id=8b9dd2fa-86a9-4f02-b153-b663cd331fd1",
+					"scene": null
+				}
+			]
+		}
+	}
+}
